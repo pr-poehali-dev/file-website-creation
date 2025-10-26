@@ -48,15 +48,10 @@ const Index = () => {
       <main className="pt-16">
         {activeSection === 'home' && (
           <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
-            <video 
-              autoPlay 
-              loop 
-              muted 
-              playsInline
-              className="absolute inset-0 w-full h-full object-cover"
-            >
-              <source src="https://www.youtube.com/watch?v=dQw4w9WgXcQ" type="video/mp4" />
-            </video>
+            <div 
+              className="absolute inset-0 w-full h-full bg-cover bg-center"
+              style={{ backgroundImage: 'url(https://cdn.poehali.dev/files/0acec638-30a6-4c3b-be30-5094be13a3b4.jpg)' }}
+            ></div>
             <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-background"></div>
             <div className="relative z-10 text-center px-4">
               <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-green-400 bg-clip-text text-transparent">
