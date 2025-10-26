@@ -60,7 +60,7 @@ const Index = () => {
               <p className="text-xl md:text-2xl text-muted-foreground mb-8">
                 Лучший ролевой сервер на просторах GTA
               </p>
-              <div className="flex gap-4 justify-center">
+              <div className="flex flex-col md:flex-row gap-4 justify-center">
                 <Button 
                   size="lg" 
                   className="bg-primary text-primary-foreground hover:bg-primary/90"
