@@ -56,7 +56,7 @@ const Index = () => {
             <div className="absolute inset-0 bg-gradient-to-b from-primary/20 to-background"></div>
             <div className="relative z-10 text-center px-4">
               <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-green-400 bg-clip-text text-transparent">
-                PHANTOM ROLE PLAY
+                PHANTOM ROLEPLAY
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground mb-8">
                 Лучший ролевой сервер на просторах GTA
