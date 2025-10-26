@@ -62,7 +62,11 @@ const Index = () => {
                 Лучший ролевой сервер на просторах GTA
               </p>
               <div className="flex gap-4 justify-center">
-                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+                <Button 
+                  size="lg" 
+                  className="bg-primary text-primary-foreground hover:bg-primary/90"
+                  onClick={() => window.open('https://drive.google.com/file/d/15LMmMlD3fqsAB5k8cvY4RLMpoamFKQoM/view?usp=drive_link', '_blank')}
+                >
                   <Icon name="Download" size={20} className="mr-2" />
                   Начать играть
                 </Button>
