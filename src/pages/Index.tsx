@@ -64,7 +64,13 @@ const Index = () => {
                 <Button 
                   size="lg" 
                   className="bg-primary text-primary-foreground hover:bg-primary/90"
-                  onClick={() => window.open('https://drive.google.com/file/d/15LMmMlD3fqsAB5k8cvY4RLMpoamFKQoM/view?usp=drive_link', '_blank')}
+                  onClick={() => {
+                    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+                    const url = isMobile 
+                      ? 'https://drive.google.com/file/d/1CrnNbIWKAJAhEhxGaN-JegjZ41e_Lz4v/view?usp=sharing'
+                      : 'https://drive.google.com/file/d/15LMmMlD3fqsAB5k8cvY4RLMpoamFKQoM/view?usp=drive_link';
+                    window.open(url, '_blank');
+                  }}
                 >
                   <Icon name="Download" size={20} className="mr-2" />
                   Начать играть
