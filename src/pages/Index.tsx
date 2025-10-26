@@ -45,10 +45,7 @@ const Index = () => {
               </button>
             </div>
 
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-              <Icon name="User" size={16} className="mr-2" />
-              Войти
-            </Button>
+            <div className="w-4"></div>
           </nav>
         </div>
       </header>
