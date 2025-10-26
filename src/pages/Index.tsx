@@ -37,12 +37,7 @@ const Index = () => {
               >
                 Донат
               </button>
-              <button 
-                onClick={() => setActiveSection('help')}
-                className={`hover:text-primary transition-colors ${activeSection === 'help' ? 'text-primary' : ''}`}
-              >
-                Помощь
-              </button>
+
             </div>
 
             <div className="w-4"></div>
@@ -70,7 +65,11 @@ const Index = () => {
                   <Icon name="Download" size={20} className="mr-2" />
                   Начать играть
                 </Button>
-                <Button size="lg" variant="outline">
+                <Button 
+                  size="lg" 
+                  variant="outline"
+                  onClick={() => window.open('https://t.me/arz_phantom', '_blank')}
+                >
                   <Icon name="Users" size={20} className="mr-2" />
                   Наше сообщество
                 </Button>
@@ -97,7 +96,7 @@ const Index = () => {
                 <Card className="p-6 bg-card border-border hover:border-primary transition-colors">
                   <Icon name="Heart" size={40} className="text-primary mb-4" />
                   <h3 className="text-xl font-bold mb-2">Дружное сообщество</h3>
-                  <p className="text-muted-foreground">Более 50,000 активных игроков ежедневно</p>
+                  <p className="text-muted-foreground">Более десятка активных игроков ежедневно</p>
                 </Card>
               </div>
             </div>
@@ -109,6 +108,45 @@ const Index = () => {
             <div className="container mx-auto max-w-4xl">
               <h2 className="text-4xl font-bold mb-8">Новости сервера</h2>
               <div className="space-y-6">
+                <Card className="p-6 bg-card border-border">
+                  <div className="flex items-start gap-4">
+                    <div className="bg-orange-500/10 p-3 rounded-lg">
+                      <Icon name="Ghost" size={32} className="text-orange-500" />
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center gap-3 mb-2">
+                        <h3 className="text-2xl font-bold">Обновление 1.1 — Хэллоуин</h3>
+                        <span className="text-sm text-muted-foreground">26 октября 2025</span>
+                      </div>
+                      <p className="text-muted-foreground mb-4">
+                        Мистическое обновление уже здесь! Празднуйте Хэллоуин в мире PHANTOM RP с уникальными событиями и наградами.
+                      </p>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li className="flex items-center gap-2">
+                          <Icon name="Check" size={16} className="text-orange-500" />
+                          Тематические локации и декорации
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <Icon name="Check" size={16} className="text-orange-500" />
+                          Эксклюзивные костюмы и маски
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <Icon name="Check" size={16} className="text-orange-500" />
+                          Специальные квесты и награды
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <Icon name="Check" size={16} className="text-orange-500" />
+                          Ночные рейды и мистические события
+                        </li>
+                      </ul>
+                      <div className="mt-4 pt-4 border-t border-border">
+                        <p className="text-sm font-medium text-orange-500">
+                          Событие продлится до 1 ноября — не упустите возможность получить уникальные награды!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </Card>
                 <Card className="p-6 bg-card border-border">
                   <div className="flex items-start gap-4">
                     <div className="bg-primary/10 p-3 rounded-lg">
