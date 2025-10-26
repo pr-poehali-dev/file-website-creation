@@ -108,31 +108,9 @@ const Index = () => {
           <section className="py-16 px-4">
             <div className="container mx-auto max-w-4xl">
               <h2 className="text-4xl font-bold mb-8">Новости сервера</h2>
-              <div className="space-y-6">
-                {[1, 2, 3].map((item) => (
-                  <Card key={item} className="p-6 bg-card border-border hover:border-primary transition-colors">
-                    <div className="flex items-start gap-4">
-                      <div className="w-24 h-24 bg-primary/20 rounded flex items-center justify-center flex-shrink-0">
-                        <Icon name="Newspaper" size={40} className="text-primary" />
-                      </div>
-                      <div className="flex-1">
-                        <div className="flex items-center gap-2 mb-2">
-                          <span className="text-xs bg-primary/20 text-primary px-2 py-1 rounded">ОБНОВЛЕНИЕ</span>
-                          <span className="text-xs text-muted-foreground">26 октября 2025</span>
-                        </div>
-                        <h3 className="text-xl font-bold mb-2">Обновление 3.0 уже доступно!</h3>
-                        <p className="text-muted-foreground mb-3">
-                          Встречайте крупнейшее обновление года: новые фракции, обновленная карта города, 
-                          система достижений и многое другое
-                        </p>
-                        <Button variant="ghost" size="sm" className="text-primary">
-                          Читать полностью
-                          <Icon name="ArrowRight" size={16} className="ml-2" />
-                        </Button>
-                      </div>
-                    </div>
-                  </Card>
-                ))}
+              <div className="text-center py-12">
+                <Icon name="Newspaper" size={64} className="text-muted-foreground mx-auto mb-4" />
+                <p className="text-xl text-muted-foreground">Скоро здесь появятся новости</p>
               </div>
             </div>
           </section>
