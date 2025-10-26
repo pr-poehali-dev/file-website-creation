@@ -108,9 +108,46 @@ const Index = () => {
           <section className="py-16 px-4">
             <div className="container mx-auto max-w-4xl">
               <h2 className="text-4xl font-bold mb-8">Новости сервера</h2>
-              <div className="text-center py-12">
-                <Icon name="Newspaper" size={64} className="text-muted-foreground mx-auto mb-4" />
-                <p className="text-xl text-muted-foreground">Скоро здесь появятся новости</p>
+              <div className="space-y-6">
+                <Card className="p-6 bg-card border-border">
+                  <div className="flex items-start gap-4">
+                    <div className="bg-primary/10 p-3 rounded-lg">
+                      <Icon name="Rocket" size={32} className="text-primary" />
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center gap-3 mb-2">
+                        <h3 className="text-2xl font-bold">Открытие сервера 1.0</h3>
+                        <span className="text-sm text-muted-foreground">26 октября 2025</span>
+                      </div>
+                      <p className="text-muted-foreground mb-4">
+                        Мы рады объявить об официальном открытии PHANTOM RP! Встречайте полностью обновленный игровой мир с уникальными механиками, новыми фракциями и бизнесами.
+                      </p>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li className="flex items-center gap-2">
+                          <Icon name="Check" size={16} className="text-primary" />
+                          Новая экономическая система
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <Icon name="Check" size={16} className="text-primary" />
+                          15+ уникальных фракций
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <Icon name="Check" size={16} className="text-primary" />
+                          Система достижений и рейтингов
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <Icon name="Check" size={16} className="text-primary" />
+                          Обновленная карта с новыми локациями
+                        </li>
+                      </ul>
+                      <div className="mt-4 pt-4 border-t border-border">
+                        <p className="text-sm font-medium text-primary">
+                          Присоединяйтесь к нашему сообществу и станьте частью истории!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </Card>
               </div>
             </div>
           </section>
