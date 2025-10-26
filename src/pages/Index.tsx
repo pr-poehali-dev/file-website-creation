@@ -32,8 +32,8 @@ const Index = () => {
                 Новости
               </button>
               <button 
-                onClick={() => setActiveSection('donate')}
-                className={`hover:text-primary transition-colors ${activeSection === 'donate' ? 'text-primary' : ''}`}
+                onClick={() => window.open('https://t.me/why_BEZDUSHNI', '_blank')}
+                className="hover:text-primary transition-colors"
               >
                 Донат
               </button>
@@ -191,7 +191,7 @@ const Index = () => {
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li><button onClick={() => setActiveSection('home')} className="hover:text-primary">Главная</button></li>
                 <li><button onClick={() => setActiveSection('news')} className="hover:text-primary">Новости</button></li>
-                <li><button onClick={() => setActiveSection('donate')} className="hover:text-primary">Донат</button></li>
+                <li><button onClick={() => window.open('https://t.me/why_BEZDUSHNI', '_blank')} className="hover:text-primary">Донат</button></li>
                 <li><button onClick={() => setActiveSection('help')} className="hover:text-primary">Помощь</button></li>
               </ul>
             </div>
