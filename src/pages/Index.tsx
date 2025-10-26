@@ -15,7 +15,7 @@ const Index = () => {
           <nav className="flex items-center justify-between h-16">
             <div className="flex items-center gap-2">
               <Icon name="Gamepad2" size={32} className="text-primary" />
-              <span className="text-xl font-bold">ARIZONA RP</span>
+              <span className="text-xl font-bold">PHANTOM RP</span>
             </div>
             
             <div className="hidden md:flex items-center gap-6">
@@ -56,7 +56,7 @@ const Index = () => {
             <div className="absolute inset-0 bg-gradient-to-b from-primary/20 to-background"></div>
             <div className="relative z-10 text-center px-4">
               <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-green-400 bg-clip-text text-transparent">
-                ARIZONA ROLE PLAY
+                PHANTOM ROLE PLAY
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground mb-8">
                 Лучший ролевой сервер на просторах GTA
@@ -293,7 +293,7 @@ const Index = () => {
             <div>
               <h4 className="font-bold mb-4 flex items-center gap-2">
                 <Icon name="Gamepad2" size={20} className="text-primary" />
-                ARIZONA RP
+                PHANTOM RP
               </h4>
               <p className="text-sm text-muted-foreground">
                 Лучший ролевой сервер GTA с уникальным игровым процессом
@@ -327,7 +327,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
-            <p>© 2025 Arizona RP. Все права защищены</p>
+            <p>© 2025 Phantom RP. Все права защищены</p>
           </div>
         </div>
       </footer>
