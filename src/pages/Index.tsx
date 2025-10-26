@@ -315,10 +315,9 @@ const Index = () => {
             <div>
               <h4 className="font-bold mb-4">Сообщество</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-primary">Discord</a></li>
+                <li><a href="#" className="hover:text-primary">Telegram</a></li>
                 <li><a href="#" className="hover:text-primary">ВКонтакте</a></li>
                 <li><a href="#" className="hover:text-primary">YouTube</a></li>
-                <li><a href="#" className="hover:text-primary">Форум</a></li>
               </ul>
             </div>
           </div>
