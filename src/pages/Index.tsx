@@ -139,11 +139,7 @@ const Index = () => {
                           Ночные рейды и мистические события
                         </li>
                       </ul>
-                      <div className="mt-4 pt-4 border-t border-border">
-                        <p className="text-sm font-medium text-orange-500">
-                          Событие продлится до 1 ноября — не упустите возможность получить уникальные награды!
-                        </p>
-                      </div>
+
                     </div>
                   </div>
                 </Card>
