@@ -48,7 +48,16 @@ const Index = () => {
       <main className="pt-16">
         {activeSection === 'home' && (
           <section className="relative h-[600px] flex items-center justify-center overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-b from-primary/20 to-background"></div>
+            <video 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover"
+            >
+              <source src="https://www.youtube.com/watch?v=dQw4w9WgXcQ" type="video/mp4" />
+            </video>
+            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-background"></div>
             <div className="relative z-10 text-center px-4">
               <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-green-400 bg-clip-text text-transparent">
                 PHANTOM ROLEPLAY
