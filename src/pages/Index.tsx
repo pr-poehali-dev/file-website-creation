@@ -226,18 +226,15 @@ const Index = () => {
             <div>
               <h4 className="font-bold mb-4">Разделы</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><button onClick={() => setActiveSection('home')} className="hover:text-primary">Главная</button></li>
-                <li><button onClick={() => setActiveSection('news')} className="hover:text-primary">Новости</button></li>
+                <li><button onClick={() => { setActiveSection('home'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="hover:text-primary">Главная</button></li>
+                <li><button onClick={() => { setActiveSection('news'); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="hover:text-primary">Новости</button></li>
                 <li><button onClick={() => window.open('https://t.me/why_BEZDUSHNI', '_blank')} className="hover:text-primary">Донат</button></li>
-                <li><button onClick={() => setActiveSection('help')} className="hover:text-primary">Помощь</button></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold mb-4">Сообщество</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-primary">Telegram</a></li>
-                <li><a href="#" className="hover:text-primary">ВКонтакте</a></li>
-                <li><a href="#" className="hover:text-primary">YouTube</a></li>
+                <li><button onClick={() => window.open('https://t.me/arz_phantom', '_blank')} className="hover:text-primary">Telegram</button></li>
               </ul>
             </div>
           </div>
