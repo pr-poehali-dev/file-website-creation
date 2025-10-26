@@ -293,7 +293,7 @@ const Index = () => {
 
       <footer className="bg-card border-t border-border mt-16">
         <div className="container mx-auto px-4 py-8">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
               <h4 className="font-bold mb-4 flex items-center gap-2">
                 <Icon name="Gamepad2" size={20} className="text-primary" />
@@ -319,14 +319,6 @@ const Index = () => {
                 <li><a href="#" className="hover:text-primary">ВКонтакте</a></li>
                 <li><a href="#" className="hover:text-primary">YouTube</a></li>
                 <li><a href="#" className="hover:text-primary">Форум</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold mb-4">Информация</h4>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-primary">Правила сервера</a></li>
-                <li><a href="#" className="hover:text-primary">Пользовательское соглашение</a></li>
-                <li><a href="#" className="hover:text-primary">Политика конфиденциальности</a></li>
               </ul>
             </div>
           </div>
