@@ -124,105 +124,10 @@ const Index = () => {
                 Поддержите развитие сервера и получите эксклюзивные преимущества
               </p>
               
-              <Tabs defaultValue="currency" className="w-full">
-                <TabsList className="grid w-full grid-cols-4 mb-8">
-                  <TabsTrigger value="currency">Игровая валюта</TabsTrigger>
-                  <TabsTrigger value="vip">VIP статусы</TabsTrigger>
-                  <TabsTrigger value="transport">Транспорт</TabsTrigger>
-                  <TabsTrigger value="other">Прочее</TabsTrigger>
-                </TabsList>
-
-                <TabsContent value="currency">
-                  <div className="grid md:grid-cols-3 gap-6">
-                    {[
-                      { amount: '100,000$', price: '99₽', popular: false },
-                      { amount: '500,000$', price: '399₽', popular: true },
-                      { amount: '1,000,000$', price: '699₽', popular: false }
-                    ].map((pack, idx) => (
-                      <Card key={idx} className={`p-6 bg-card border-border relative ${pack.popular ? 'border-primary' : ''}`}>
-                        {pack.popular && (
-                          <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                            <span className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-bold">
-                              ПОПУЛЯРНОЕ
-                            </span>
-                          </div>
-                        )}
-                        <Icon name="Coins" size={40} className="text-primary mb-4" />
-                        <h3 className="text-2xl font-bold mb-2">{pack.amount}</h3>
-                        <p className="text-3xl font-bold text-primary mb-6">{pack.price}</p>
-                        <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-                          <Icon name="ShoppingCart" size={16} className="mr-2" />
-                          Купить
-                        </Button>
-                      </Card>
-                    ))}
-                  </div>
-                </TabsContent>
-
-                <TabsContent value="vip">
-                  <div className="grid md:grid-cols-3 gap-6">
-                    {[
-                      { name: 'VIP Bronze', price: '199₽/мес', features: ['x1.5 к опыту', 'Уникальный цвет ника', 'Приоритет в очереди'] },
-                      { name: 'VIP Silver', price: '399₽/мес', features: ['x2 к опыту', 'Эксклюзивные скины', 'Бесплатный спавн авто', 'Приоритетная поддержка'] },
-                      { name: 'VIP Gold', price: '699₽/мес', features: ['x3 к опыту', 'Все VIP преимущества', 'Личный дом', 'Эксклюзивные команды'] }
-                    ].map((vip, idx) => (
-                      <Card key={idx} className="p-6 bg-card border-border">
-                        <Icon name="Crown" size={40} className="text-primary mb-4" />
-                        <h3 className="text-2xl font-bold mb-2">{vip.name}</h3>
-                        <p className="text-2xl font-bold text-primary mb-4">{vip.price}</p>
-                        <ul className="space-y-2 mb-6">
-                          {vip.features.map((feature, i) => (
-                            <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                              <Icon name="Check" size={16} className="text-primary mt-0.5 flex-shrink-0" />
-                              <span>{feature}</span>
-                            </li>
-                          ))}
-                        </ul>
-                        <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-                          Приобрести
-                        </Button>
-                      </Card>
-                    ))}
-                  </div>
-                </TabsContent>
-
-                <TabsContent value="transport">
-                  <div className="grid md:grid-cols-4 gap-4">
-                    {['Спортивный автомобиль', 'Мотоцикл', 'Вертолёт', 'Яхта', 'Грузовик', 'Лимузин', 'Квадроцикл', 'Самолёт'].map((vehicle, idx) => (
-                      <Card key={idx} className="p-4 bg-card border-border hover:border-primary transition-colors cursor-pointer">
-                        <Icon name="Car" size={32} className="text-primary mb-2" />
-                        <h4 className="font-bold text-sm mb-1">{vehicle}</h4>
-                        <p className="text-xs text-muted-foreground mb-3">от 299₽</p>
-                        <Button size="sm" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-                          Выбрать
-                        </Button>
-                      </Card>
-                    ))}
-                  </div>
-                </TabsContent>
-
-                <TabsContent value="other">
-                  <div className="grid md:grid-cols-3 gap-6">
-                    {[
-                      { name: 'Смена никнейма', icon: 'Edit', price: '99₽' },
-                      { name: 'Разбан аккаунта', icon: 'Unlock', price: '499₽' },
-                      { name: 'Эксклюзивный скин', icon: 'Shirt', price: '199₽' },
-                      { name: 'Дополнительный слот', icon: 'UserPlus', price: '149₽' },
-                      { name: 'Смена пола персонажа', icon: 'Users', price: '299₽' },
-                      { name: 'Премиум оружие', icon: 'Sword', price: '399₽' }
-                    ].map((item, idx) => (
-                      <Card key={idx} className="p-6 bg-card border-border hover:border-primary transition-colors">
-                        <Icon name={item.icon as any} size={40} className="text-primary mb-4" />
-                        <h3 className="text-xl font-bold mb-2">{item.name}</h3>
-                        <p className="text-2xl font-bold text-primary mb-4">{item.price}</p>
-                        <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-                          Купить
-                        </Button>
-                      </Card>
-                    ))}
-                  </div>
-                </TabsContent>
-              </Tabs>
+              <div className="text-center py-12">
+                <Icon name="ShoppingCart" size={64} className="text-muted-foreground mx-auto mb-4" />
+                <p className="text-xl text-muted-foreground">Скоро здесь появится магазин</p>
+              </div>
             </div>
           </section>
         )}
